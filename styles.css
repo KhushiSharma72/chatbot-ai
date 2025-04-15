@@ -1,0 +1,67 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.card {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    border-radius: 10px 10px 0 0 !important;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#status-alert {
+    display: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+#dashboard-section, #log-section, #profile-section, #ask-section {
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+#answer-section {
+    animation: slideDown 0.5s;
+}
+
+@keyframes slideDown {
+    from { 
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to { 
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.quick-question {
+    margin-bottom: 10px;
+}
+
+#diet-suggestions, #medicine-reminders {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#diet-suggestions li, #medicine-reminders li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+#diet-suggestions li:last-child, #medicine-reminders li:last-child {
+    border-bottom: none;
+}
